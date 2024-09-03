@@ -17,8 +17,12 @@ const Navbar = () => {
               <li>Contact</li>
             </ul>
             <div className="navbar-btn">
-              <button>Sign up</button>
-              <button>Login</button>
+              <button className="signup-btn">
+                <span>Sign up</span>
+              </button>
+              <button className="login-btn">
+                <span>Login</span>
+              </button>
             </div>
           </div>
         </nav>
