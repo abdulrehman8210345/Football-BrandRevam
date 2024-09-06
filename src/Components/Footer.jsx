@@ -4,13 +4,15 @@ import facebooklogo from "../assets/facebook.png";
 import twitterlogo from "../assets/twitter.png";
 import instalogo from "../assets/insta.png";
 import inbox from "../assets/inbox.png";
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+  const navigate = useNavigate();
   return (
     <section className="footer-section">
       <div className="container">
         <div className="main-footer">
-          <div className="footer-logo">
+          <div className="footer-logo" onClick={() => navigate("/")}>
             <div className="navbar-logo">
               <img src={logo} alt="" />
             </div>

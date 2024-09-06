@@ -1,29 +1,22 @@
 import React from "react";
-import Hero from "./Components/Hero";
-import Navbar from "./Components/Navbar";
-import HeroContent from "./Components/HeroContent";
-import AboutUs from "./Components/AboutUs";
-import Play from "./Components/Play";
-import HowtoPlay from "./Components/HowtoPlay";
-import Video from "./Components/Video";
-import Welcome from "./Components/Welcome";
-import Request from "./Components/Request";
-import Footer from "./Components/Footer";
+import Home from "./pages/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
+import CreateCompetition from "./pages/CreateCompetition";
+import JoinCompetition from "./pages/JoinCompetition";
 
 const App = () => {
   return (
-    <div>
-      <Hero />
-      <Navbar />
-      <HeroContent />
-      <AboutUs />
-      <Play />
-      <HowtoPlay />
-      <Video />
-      <Welcome />
-      <Request />
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/create-competition" element={<CreateCompetition />} />
+        <Route path="/join-competition" element={<JoinCompetition />} />
+      </Routes>
+    </BrowserRouter>
   );
 };
 
