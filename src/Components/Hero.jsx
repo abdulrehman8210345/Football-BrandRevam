@@ -4,8 +4,12 @@ import slider1 from "../assets/slider1.jfif";
 import slider2 from "../assets/slider2.jfif";
 import slider3 from "../assets/slider3.jfif";
 import slider4 from "../assets/slider4.jfif";
+<<<<<<< HEAD
 // import heroImg from "../assets/hero-img.png";
 import playbtn from "../assets/playbtn.png";
+=======
+import heroImg from "../assets/hero-img.png";
+>>>>>>> 15a4a6092d5494473826d8b998df8557ef075afd
 
 const Hero = () => {
   const settings = {
@@ -25,6 +29,7 @@ const Hero = () => {
     <section className="hero-section">
       <div className="main-hero">
         <div className="hero-img">
+<<<<<<< HEAD
           {/* <img src={heroImg} alt="Hero" /> */}
           <div className="main-hero-content">
           <h3>
@@ -45,6 +50,9 @@ const Hero = () => {
             </div>
           </button>
         </div>
+=======
+          <img src={heroImg} alt="Hero" />
+>>>>>>> 15a4a6092d5494473826d8b998df8557ef075afd
         </div>
         <div className="slider-img">
           <Slider {...settings}>

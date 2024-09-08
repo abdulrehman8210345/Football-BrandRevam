@@ -16,6 +16,10 @@ const Home = () => {
     <div>
       <Navbar />
       <Hero />
+<<<<<<< HEAD
+=======
+      <HeroContent />
+>>>>>>> 15a4a6092d5494473826d8b998df8557ef075afd
       <AboutUs />
       <Play />
       <HowtoPlay />

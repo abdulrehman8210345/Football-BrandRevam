@@ -6,7 +6,11 @@ import ContactForm from "../Components/ContactForm";
 
 const Contact = () => {
   return (
+<<<<<<< HEAD
     <div>
+=======
+    <div className="pages-hero-bg">
+>>>>>>> 15a4a6092d5494473826d8b998df8557ef075afd
       <Navbar />
       <HeroText
         main={"Contact Us"}
